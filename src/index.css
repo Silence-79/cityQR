@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    width: 100dvw;
+    height: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    background-color: #f6f8f5;
+    color: #1a252f;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    overscroll-behavior: none;
+  }
+
+  #root {
+    width: 100%;
+    width: 100dvw;
+    height: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+/* Neumorphic Soft UI Utilities (Muted Sky-Blue Theme) */
+.neu-card {
+  background-color: #9bb4c4;
+  box-shadow: 12px 12px 26px rgba(55, 78, 97, 0.28), -10px -10px 24px rgba(255, 255, 255, 0.7);
+  -webkit-overflow-scrolling: touch;
+}
+
+.neu-btn {
+  background-color: #9bb4c4;
+  box-shadow: 4px 4px 9px rgba(55, 78, 97, 0.22), -3px -3px 8px rgba(255, 255, 255, 0.65);
+}
+
+.neu-btn:hover {
+  background-color: #a2bac9;
+  box-shadow: 5px 5px 11px rgba(55, 78, 97, 0.25), -4px -4px 10px rgba(255, 255, 255, 0.75);
+}
+
+.neu-btn-pressed {
+  background-color: #92abbc;
+  box-shadow: inset 3px 3px 6px rgba(45, 68, 86, 0.32), inset -3px -3px 6px rgba(255, 255, 255, 0.55);
+}
+
+.neu-input {
+  background-color: #90a9ba;
+  box-shadow: inset 2px 2px 5px rgba(45, 68, 86, 0.28), inset -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Clean, understated scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
